@@ -8,8 +8,15 @@ const ingredients = [
 ];
 
 const listEl = document.querySelector('#ingredients');
-const newItemEl = document.createElement('li');
-newItemEl.add('item');
+
+
+ingredients.forEach((item) => {
+  const newItemEl = document.createElement('li');
+  newItemEl.textContent = item;
+  listEl.append(newItemEl);
+  
+ });
+
 
 
 // витягти з масиву назви та вставити як текстовий контент

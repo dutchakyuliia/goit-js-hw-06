@@ -13,18 +13,21 @@ const images = [
   },
 ];
 
-const listEl = document.querySelector('.gallery');
+const gallery = document.querySelector('.gallery');
 
 
+const markup = images.map( ({
+  url,
+  alt,
+}) => `<li class="gallery-item">
+    <a href="#">
+      <img src="${url}" alt="${alt}">
+    </a>
+  </li>`).join('');
 
 
+gallery.insertAdjacentHTML('afterbegin', markup);
+gallery.style.display = "flex";
+console.log(markup);
 
-// const list = document.querySelector(".list");
-
-// const newTechnologies = ["React", "TypeScript", "Node.js"];
-// const markup = newTechnologies
-//   .map((technology) => `<li class="list-item new">${technology}</li>`)
-//   .join("");
-
-// list.insertAdjacentHTML("beforeend", markup);
-// list.insertAdjacentHTML("beforebegin", "<h2>Popular technologies</h2>");
+//змінити ширину 

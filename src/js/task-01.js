@@ -4,21 +4,15 @@ const itemNumber = itemList.length;
 console.log(`Number of categories: ${itemNumber}`)
 
 
-
-// const titleEl = itemList.firstChild;
-// console.log(titleEl)
-// const liEl = itemList.children;
-// const liNumber = liEl.length;
-// console.log(liEl)
-// console.log(`Category: ${titleEl}`);
-// console.log(`Elements: ${liNumber}`)
+itemList.forEach((item) => {
+    const title = item.querySelector('h2').innerText;
+    const itemLength = item.querySelectorAll('li').length;
+    console.log(`Category: ${title}`);
+    console.log(`Elements: ${itemLength}`);
+});
 
 
-// itemList.forEach((element, number) => {
 
-// console.log(`Category: ${}`)
-// console.log(`Elements: ${}`) 
-// })
 
 
 
