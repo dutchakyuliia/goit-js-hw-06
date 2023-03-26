@@ -3,5 +3,6 @@ let text = document.querySelector('#text');
 
 
 textControlEl.addEventListener("input", (event) => {
-    text = event.target.value;
+    text = event.target.style.fontSize;
+
 });

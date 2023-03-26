@@ -17,12 +17,3 @@ ingredients.forEach((item) => {
   
  });
 
-
-
-// витягти з масиву назви та вставити як текстовий контент
-// newLi.textContent = " ";
-
-
-// itemList.forEach((element, number) => {
-
-// })
