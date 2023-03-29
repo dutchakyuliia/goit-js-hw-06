@@ -9,7 +9,6 @@ form.addEventListener("submit", (event) => {
     return alert("You must type all inputs");
   }
 
-  console.log("Email", email.value);
-  console.log("Password", password.value);
+  console.log({email: email.value, password: password.value})
   event.target.reset();
 });
